@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.time.Instant;
-//test github
+//test github commit
 @ControllerAdvice
 public class ControllerExceptionHandler {
     @ExceptionHandler(ResourceNotFoundException.class)
