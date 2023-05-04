@@ -2,7 +2,7 @@ package com.learnjava.dscommerce.dto;
 
 import com.learnjava.dscommerce.entities.Product;
 import jakarta.persistence.Column;
-
+//teste git
 public class ProductDTO {
     private Long id;
     private String name;
