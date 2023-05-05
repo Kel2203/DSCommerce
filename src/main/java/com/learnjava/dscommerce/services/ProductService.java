@@ -50,7 +50,7 @@ public class ProductService {
             entity = repository.save(entity);
             return new ProductDTO(entity);
         }catch (EntityNotFoundException e){
-            throw new ResourceNotFoundException("Recurso não encontrado");
+            throw new ResourceNotFoundException("Recurso não encontrado!");
         }
 
     }
@@ -59,9 +59,9 @@ public class ProductService {
         try {
             repository.deleteById(id);
         }catch (EmptyResultDataAccessException e){
-            throw new ResourceNotFoundException("Recurso não encontrado");
+            throw new ResourceNotFoundException("Recurso não encontrado!");
         }catch (DataIntegrityViolationException e){
-            throw new DataBaseException("Falha de integridade referencial");
+            throw new DataBaseException("Falha de integridade referencial!");
         }
 
 

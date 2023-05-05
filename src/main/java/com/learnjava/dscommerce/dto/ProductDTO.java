@@ -10,13 +10,13 @@ import jakarta.validation.constraints.Size;
 //teste git
 public class ProductDTO {
     private Long id;
-    @Size(min = 3, max = 80, message = "Nome precisa ter de 3 a 80 caracteres")
-    @NotBlank(message = "Campo requerido")
+    @Size(min = 3, max = 80, message = "Nome precisa ter de 3 a 80 caracteres!")
+    @NotBlank(message = "Campo requerido!")
     private String name;
-    @Size(min = 10, message = "mensagem precisa ter no minimo 10 caracteres")
+    @Size(min = 10, message = "mensagem precisa ter no minimo 10 caracteres!")
     @NotBlank(message = "Campo requerido")
     private String description;
-    @Positive(message = "O preço deve ser positivo")
+    @Positive(message = "O preço deve ser positivo!")
     private Double price;
     private String imgUrl;
 
